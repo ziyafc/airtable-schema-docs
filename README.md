@@ -1,41 +1,47 @@
 # Airtable Schema Documentation
 
-This repository contains comprehensive documentation for all Airtable bases connected to our workspace.
+Bu vault, Airtable workspace'inin tam dokümantasyonunu içerir.
 
-## 📋 Overview
+## 🗺️ Navigation
 
-| Base | Description | Tables |
-|------|-------------|--------|
-| [Amstel Dutch](bases/amstel-dutch.md) | Product launches tracking | 1 |
-| [Expat Student Course Management](bases/expat-student-course-management.md) | Student enrollment and course management | 6 |
-| [!!Base for App!!](bases/base-for-app.md) | Main application database | 20 |
-| [Untitled Base](bases/untitled-base.md) | Development/staging base | 5 |
+### Bases
+- [[bases/amstel-dutch/index|Amstel Dutch]] - Product launch tracking
+- [[bases/expat-student/index|Expat Student Course Management]] - Öğrenci ve kurs yönetimi
+- [[bases/main-app/index|Main App (!!Base for App!!)]] - Ana uygulama veritabanı
+- [[bases/dev-staging/index|Dev/Staging (Untitled Base)]] - Geliştirme ortamı
 
-## 🗂️ Structure
+### Quick Reference
+- [[reference/field-types|Field Types]] - Airtable field type'ları
+- [[reference/status-workflows|Status Workflows]] - Durum akışları
+- [[reference/api-ids|API IDs]] - Tüm Base ve Table ID'leri
+- [[reference/patterns|Common Patterns]] - Tekrar eden yapılar
 
-```
-├── README.md                 # This file
-├── bases/                    # Individual base documentation
-│   ├── amstel-dutch.md
-│   ├── expat-student-course-management.md
-│   ├── base-for-app.md
-│   └── untitled-base.md
-└── diagrams/                 # Entity relationship diagrams
-    └── relationships.md
-```
-
-## 🔗 Quick Links
-
-- **Base IDs:**
-  - Amstel Dutch: `app8UfvWnkJWFKUpt`
-  - Expat Student Course Management: `appAe8WSfkPmp8P8I`
-  - !!Base for App!!: `apptQsmAbTKpeV2z0`
-  - Untitled Base: `appg5FhzhGeUrEjve`
-
-## 📅 Last Updated
-
-2025-12-17
+### Diagrams
+- [[diagrams/overview|Architecture Overview]] - Genel mimari
+- [[diagrams/relationships|Cross-Base Relationships]] - Base'ler arası ilişkiler
 
 ---
 
-*Auto-generated documentation from Airtable MCP integration*
+## 📊 Base Summary
+
+| Base | Tables | AI Fields | Chat | Tests |
+|------|--------|-----------|------|-------|
+| [[bases/amstel-dutch/index\|Amstel Dutch]] | 1 | ❌ | ❌ | ❌ |
+| [[bases/expat-student/index\|Expat Student]] | 6 | ✅ | ❌ | ✅ |
+| [[bases/main-app/index\|Main App]] | 20 | ✅ | ✅ | ✅ |
+| [[bases/dev-staging/index\|Dev/Staging]] | 5 | ❌ | ❌ | ❌ |
+
+---
+
+## 🏷️ Tags
+
+- `#base` - Base dökümanları
+- `#table` - Tablo dökümanları  
+- `#field-type/*` - Field type'lara göre
+- `#has-ai` - AI field içeren tablolar
+- `#has-formula` - Formula içeren tablolar
+- `#junction-table` - Many-to-many ilişki tabloları
+
+---
+
+*Son güncelleme: 2025-12-17*
