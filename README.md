@@ -1,46 +1,55 @@
 # Airtable Schema Documentation
 
-Bu vault, Airtable workspace'inin tam dokümantasyonunu içerir.
-
-## 🗺️ Navigation
-
-### Bases
-- [[bases/amstel-dutch/index|Amstel Dutch]] - Product launch tracking
-- [[bases/expat-student/index|Expat Student Course Management]] - Öğrenci ve kurs yönetimi
-- [[bases/main-app/index|Main App (!!Base for App!!)]] - Ana uygulama veritabanı
-- [[bases/dev-staging/index|Dev/Staging (Untitled Base)]] - Geliştirme ortamı
-
-### Quick Reference
-- [[reference/field-types|Field Types]] - Airtable field type'ları
-- [[reference/status-workflows|Status Workflows]] - Durum akışları
-- [[reference/api-ids|API IDs]] - Tüm Base ve Table ID'leri
-- [[reference/patterns|Common Patterns]] - Tekrar eden yapılar
-
-### Diagrams
-- [[diagrams/overview|Architecture Overview]] - Genel mimari
-- [[diagrams/relationships|Cross-Base Relationships]] - Base'ler arası ilişkiler
+> Amstel Dutch veritabanı dökümantasyonu.
 
 ---
 
-## 📊 Base Summary
+## 🚀 Nereden Başlamalıyım?
 
-| Base | Tables | AI Fields | Chat | Tests |
-|------|--------|-----------|------|-------|
-| [[bases/amstel-dutch/index\|Amstel Dutch]] | 1 | ❌ | ❌ | ❌ |
-| [[bases/expat-student/index\|Expat Student]] | 6 | ✅ | ❌ | ✅ |
-| [[bases/main-app/index\|Main App]] | 20 | ✅ | ✅ | ✅ |
-| [[bases/dev-staging/index\|Dev/Staging]] | 5 | ❌ | ❌ | ❌ |
+### 📖 Teknik Bilmiyorum
+**[[GIRIS|Buraya tıkla →]]** - Sistemin nasıl çalıştığını sade bir dille anlattım.
+
+### 💻 Geliştiriciyim
+Aşağıdaki teknik navigasyonu kullan.
+
+---
+
+## 🗺️ Bases (Veritabanları)
+
+| Base | Açıklama | Detay |
+|------|----------|-------|
+| [[bases/main-app/ACIKLAMA\|Ana Uygulama]] | Asıl çalışan sistem - 20 tablo | [[bases/main-app/index\|Teknik]] |
+| [[bases/expat-student/ACIKLAMA\|Expat Student]] | Öğrenci yönetimi - 6 tablo | [[bases/expat-student/index\|Teknik]] |
+| [[bases/amstel-dutch/ACIKLAMA\|Amstel Dutch]] | Basit takip - 1 tablo | [[bases/amstel-dutch/index\|Teknik]] |
+| [[bases/dev-staging/ACIKLAMA\|Test Ortamı]] | Geliştirme - 5 tablo | [[bases/dev-staging/index\|Teknik]] |
+
+---
+
+## 📚 Teknik Referans
+
+- [[reference/field-types|Field Types]] - Airtable alan tipleri
+- [[reference/status-workflows|Status Workflows]] - Durum akışları
+- [[reference/api-ids|API IDs]] - Tüm ID'ler
+- [[reference/patterns|Common Patterns]] - Tekrar eden yapılar
+
+## 📊 Diagrams
+
+- [[diagrams/overview|Architecture Overview]] - Genel mimari
+- [[diagrams/relationships|Cross-Base Relationships]] - İlişkiler
 
 ---
 
 ## 🏷️ Tags
 
-- `#base` - Base dökümanları
-- `#table` - Tablo dökümanları  
-- `#field-type/*` - Field type'lara göre
-- `#has-ai` - AI field içeren tablolar
-- `#has-formula` - Formula içeren tablolar
-- `#junction-table` - Many-to-many ilişki tabloları
+Bu vault'ta şu tag'ler kullanılıyor:
+
+| Tag | Anlamı |
+|-----|--------|
+| `#base` | Veritabanı dökümanları |
+| `#table` | Tablo dökümanları |
+| `#has-ai` | AI özelliği olan tablolar |
+| `#has-formula` | Formül içeren tablolar |
+| `#junction-table` | Çoka-çok ilişki tabloları |
 
 ---
 
