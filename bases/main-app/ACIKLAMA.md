@@ -41,92 +41,72 @@ Sistemi bir **ağaç** gibi düşün:
 
 ---
 
-## 📊 Tablolar ve Ne İşe Yararlar
+## 📊 Tüm Tablolar
+
+Her tablonun detaylı açıklaması için tıkla:
 
 ### 👥 İnsan Tabloları
 
-| Tablo | Ne Tutuyor? | Örnek |
+| Tablo | Ne Tutuyor? | Detay |
 |-------|-------------|-------|
-| [[bases/main-app/tables/users\|Users (Öğrenciler)]] | Tüm öğrenci bilgileri | Ad, email, hangi kursta, ilerlemesi |
-| [[bases/main-app/tables/clients\|Clients (Müşteriler)]] | Kurumsal müşteriler | Şirket X, Şirket Y |
-| [[bases/main-app/tables/user-groups\|User Groups (Gruplar)]] | Öğrenci grupları | "Salı sabah grubu" |
-
-**Örnek Senaryo:** Şirket X (müşteri) 10 çalışanını (öğrenci) Hollandaca kursuna gönderiyor.
+| Öğrenciler | Tüm öğrenci bilgileri | [[bases/main-app/tablolar/ogrenciler|→ Detay]] |
+| Müşteriler | Kurumsal müşteriler (şirketler) | [[bases/main-app/tablolar/musteriler|→ Detay]] |
+| Gruplar | Öğrenci grupları | [[bases/main-app/tablolar/gruplar|→ Detay]] |
 
 ---
 
 ### 📚 İçerik Tabloları
 
-| Tablo | Ne Tutuyor? | Örnek |
+| Tablo | Ne Tutuyor? | Detay |
 |-------|-------------|-------|
-| [[bases/main-app/tables/courses\|Courses (Kurslar)]] | Kurs seviyeleri | A1 Part 1, A1 Part 2, A2 |
-| [[bases/main-app/tables/lessons\|Lessons (Dersler)]] | Her kurstaki dersler | Hafta 1: Tanışma, Hafta 2: Alışveriş |
-| [[bases/main-app/tables/tasks\|Tasks (Ödevler)]] | Her dersteki görevler | "Kendinizi tanıtın" ödevi |
-| [[bases/main-app/tables/questions\|Questions (Sorular)]] | Quiz soruları | "'Hoe heet je?' ne demek?" |
-
-**Nasıl Bağlı?**
-```
-A1 Part 1 Kursu
-    ├── Ders 1: Tanışma
-    │       ├── Ödev: Kendinizi tanıtın (yazılı)
-    │       ├── Ödev: Sayıları öğrenin (quiz)
-    │       └── Ödev: Telaffuz (sesli)
-    ├── Ders 2: Alışveriş
-    │       ├── ...
-```
+| Kurslar | A1, A2, B1 seviyeleri | [[bases/main-app/tablolar/kurslar|→ Detay]] |
+| Dersler | Her kurstaki haftalık dersler | [[bases/main-app/tablolar/dersler|→ Detay]] |
+| Ödevler | Her dersteki görevler | [[bases/main-app/tablolar/odevler|→ Detay]] |
+| Sorular | Quiz soruları | [[bases/main-app/tablolar/sorular|→ Detay]] |
 
 ---
 
 ### 📝 Test Tabloları
 
-Öğrenciler 3 tür test yapabiliyor:
-
-| Tablo | Test Türü | Nasıl Çalışıyor? |
-|-------|----------|----------------|
-| [[bases/main-app/tables/writing-tests\|WRITING_TESTS]] | ✉️ Yazma | Öğrenci yazar → **AI otomatik düzeltir** → Öğretmen kontrol eder |
-| [[bases/main-app/tables/audio-tests\|AUDIO_TESTS]] | 🎙️ Konuşma | Öğrenci ses kaydeder → Öğretmen dinler ve puan verir |
-| [[bases/main-app/tables/mtp-tests\|MTP_TESTS]] | ✅ Çoktan Seçmeli | Öğrenci cevaplar → Otomatik puanlama |
-
-**🤖 AI Nasıl Çalışıyor? (Yazma Testlerinde)**
-
-Öğrenci Hollandaca bir şey yazdığında:
-1. Yapay zeka yazıyı analiz ediyor
-2. Hataları buluyor
-3. Doğru versiyonunu gösteriyor
-4. Olumlu geri bildirim veriyor
-5. Hataların listesini çıkarıyor
-
-Örnek:
-```
-Öğrenci yazdı: "Ik ben gaan naar de winkel"
-AI düzeltmesi: "Ik ga naar de winkel"
-Açıklama: "'ben gaan' yerine 'ga' kullanılır çünkü..."
-```
+| Tablo | Test Türü | Detay |
+|-------|----------|-------|
+| Yazı Testleri | ✉️ Yazma + **AI düzeltme** | [[bases/main-app/tablolar/yazi-testleri|→ Detay]] |
+| Ses Testleri | 🎙️ Konuşma kaydı | [[bases/main-app/tablolar/ses-testleri|→ Detay]] |
+| Çoktan Seçmeli | ✅ Quiz | [[bases/main-app/tablolar/coktan-secmeli|→ Detay]] |
 
 ---
 
 ### 💬 İletişim Tabloları
 
-| Tablo | Ne Tutuyor? | Örnek |
+| Tablo | Ne Tutuyor? | Detay |
 |-------|-------------|-------|
-| [[bases/main-app/tables/chats\|Chats (Sohbetler)]] | Öğretmen-öğrenci sohbet konuları | "Ders 3 hakkında soru" |
-| [[bases/main-app/tables/messages\|Messages (Mesajlar)]] | Sohbet içindeki mesajlar | Tek tek mesajlar |
-
-**Sohbet Durumları:**
-1. 🟠 **Gönderildi** - Öğrenci yazdı
-2. 🔵 **İşleniyor** - Öğretmen bakıyor
-3. 🟢 **Yanıtlandı** - Öğretmen cevapladı
-4. 🟣 **Arşivlendi** - Konu kapandı
+| Sohbetler | Öğretmen-öğrenci konuşmaları | [[bases/main-app/tablolar/sohbetler|→ Detay]] |
+| Mesajlar | Sohbet içindeki mesajlar | [[bases/main-app/tablolar/mesajlar|→ Detay]] |
 
 ---
 
 ### 📊 Takip Tabloları
 
-| Tablo | Ne Tutuyor? | Örnek |
+| Tablo | Ne Tutuyor? | Detay |
 |-------|-------------|-------|
-| [[bases/main-app/tables/task-progress\|Task Progress (İlerleme)]] | Kim hangi ödevi yaptı? | Ahmet + Ödev 3 = Tamamlandı ✅ |
-| [[bases/main-app/tables/course-enrollment\|Course_enrollment (Kayıtlar)]] | Kim hangi kursa kayıtlı? | Ahmet + A1 Part 1 = 15 Ocak'ta başladı |
-| [[bases/main-app/tables/events\|Events (Etkinlikler)]] | Canlı dersler ne zaman? | "A1 Grup dersi - Salı 14:00" |
+| İlerleme | Kim hangi ödevi yaptı? | [[bases/main-app/tablolar/ilerleme|→ Detay]] |
+| Kayıtlar | Kim hangi kursa kayıtlı? | [[bases/main-app/tablolar/kayitlar|→ Detay]] |
+| Etkinlikler | Canlı dersler ne zaman? | [[bases/main-app/tablolar/etkinlikler|→ Detay]] |
+| Aktiviteler | Grup aktiviteleri | [[bases/main-app/tablolar/aktiviteler|→ Detay]] |
+
+---
+
+## 🤖 AI Özelliği
+
+Bu sistemin en güçlü özelliği **Yazı Testleri**'ndeki yapay zeka:
+
+1. Öğrenci Hollandaca bir şey yazıyor
+2. AI otomatik analiz ediyor
+3. Hataları buluyor
+4. Doğru versiyonunu gösteriyor
+5. Açıklama yapıyor
+
+**[[bases/main-app/tablolar/yazi-testleri|→ Detaylı açıklama]]**
 
 ---
 
@@ -136,25 +116,25 @@ Bir öğrencinin sistemi nasıl kullandığını görelim:
 
 ```
 1️⃣ Ahmet sisteme kayıt oluyor
-   → Users tablosuna ekleniyor
-   → Course_enrollment ile A1 kursuna bağlanıyor
+   → Öğrenciler tablosuna ekleniyor
+   → Kayıtlar ile A1 kursuna bağlanıyor
 
 2️⃣ Ahmet derslerini görüyor
-   → Kursu üzerinden Lessons'a erişiyor
-   → Her dersin Tasks'ını görüyor
+   → Kursu üzerinden Derslere erişiyor
+   → Her dersin Ödevlerini görüyor
 
 3️⃣ Ahmet bir yazı ödevi yapıyor
-   → WRITING_TESTS'e kaydediliyor
+   → Yazı Testlerine kaydediliyor
    → AI otomatik geri bildirim veriyor
    → Öğretmen kontrol edip puan veriyor
 
 4️⃣ Ahmet'in sorusu var
-   → Chats'te yeni sohbet açıyor
-   → Messages'a mesajı yazıyor
+   → Sohbetlerde yeni sohbet açıyor
+   → Mesajlara mesajı yazıyor
    → Öğretmen yanıtlıyor
 
 5️⃣ Öğretmen ilerlemeyi takip ediyor
-   → Task Progress'ten kimin ne yaptığını görüyor
+   → İlerleme tablosundan kimin ne yaptığını görüyor
 ```
 
 ---
