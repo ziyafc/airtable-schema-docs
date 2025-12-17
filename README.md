@@ -1,56 +1,28 @@
-# Airtable Schema Documentation
+# Hoş Geldin! 👋
 
-> Amstel Dutch veritabanı dökümantasyonu.
+Bu döküman, Amstel Dutch dil okulu yazılımının nasıl çalıştığını anlatıyor.
 
----
-
-## 🚀 Nereden Başlamalıyım?
-
-### 📖 Teknik Bilmiyorum
-**[[GIRIS|Buraya tıkla →]]** - Sistemin nasıl çalıştığını sade bir dille anlattım.
-
-### 💻 Geliştiriciyim
-Aşağıdaki teknik navigasyonu kullan.
+**Hiç teknik bilgin olmasa bile** bu dökümanı okuyarak sistemi anlayabilirsin.
 
 ---
 
-## 🗺️ Bases (Veritabanları)
+## 📖 Okuma Sırası
 
-| Base | Açıklama | Detay |
-|------|----------|-------|
-| [[bases/main-app/ACIKLAMA\|Ana Uygulama]] | Asıl çalışan sistem - 20 tablo | [[bases/main-app/index\|Teknik]] |
-| [[bases/expat-student/ACIKLAMA\|Expat Student]] | Öğrenci yönetimi - 6 tablo | [[bases/expat-student/index\|Teknik]] |
-| [[bases/amstel-dutch/ACIKLAMA\|Amstel Dutch]] | Basit takip - 1 tablo | [[bases/amstel-dutch/index\|Teknik]] |
-| [[bases/dev-staging/ACIKLAMA\|Test Ortamı]] | Geliştirme - 5 tablo | [[bases/dev-staging/index\|Teknik]] |
+Lütfen şu sırayla oku:
 
----
-
-## 📚 Teknik Referans
-
-- [[reference/field-types|Field Types]] - Airtable alan tipleri
-- [[reference/status-workflows|Status Workflows]] - Durum akışları
-- [[reference/api-ids|API IDs]] - Tüm ID'ler
-- [[reference/patterns|Common Patterns]] - Tekrar eden yapılar
-
-## 📊 Diagrams
-
-- [[diagrams/overview|Architecture Overview]] - Genel mimari
-- [[diagrams/relationships|Cross-Base Relationships]] - İlişkiler
+1. **[[GIRIS|1. Giriş]]** - Temel kavramlar (veritabanı nedir, tablo nedir)
+2. **[[bases/main-app/ACIKLAMA|2. Ana Sistem]]** - Asıl kullandığımız sistem
+3. İstersen diğer sistemlere de bakabilirsin
 
 ---
 
-## 🏷️ Tags
+## ❓ Sorular
 
-Bu vault'ta şu tag'ler kullanılıyor:
+Anlamadığın bir şey olursa, dökümanın sonundaki "İlgili Sayfalar" linklerinden detaylara ulaşabilirsin.
 
-| Tag | Anlamı |
-|-----|--------|
-| `#base` | Veritabanı dökümanları |
-| `#table` | Tablo dökümanları |
-| `#has-ai` | AI özelliği olan tablolar |
-| `#has-formula` | Formül içeren tablolar |
-| `#junction-table` | Çoka-çok ilişki tabloları |
-
----
-
-*Son güncelleme: 2025-12-17*
+Her sayfada emoji ile işaretlenmiş bölümler var:
+- 🎯 = Bu ne işe yarıyor?
+- 📊 = Tablolar ve içerikleri
+- 🔗 = Bağlantılar (ne neyle ilişkili)
+- 💡 = Örnekler
+- ❓ = Sık sorulan sorular
